@@ -11,6 +11,8 @@ import './index.scss'
 
 import { AppContainer } from 'react-hot-loader';
 
+import 'bootstrap/scss/bootstrap.scss';
+
 // Let the reducers handle initial state
 const initialState = {}
 const store = configureStore(initialState)
