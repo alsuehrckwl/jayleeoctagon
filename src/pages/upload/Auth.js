@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
+import Login from '../../components/Login/Login';
 
 export default class Auth extends Component {
+  doLogin() {
+    // auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+    // ...
+    //   });
+  }
 
-    render () {
-        // let isLogin = !!Cookies.get("token");
-        // if (isLogin && !this.state.isLogout) {
-        //     // return this.goInbox();
-            
-        //     return (<Layout/>);
-        // } else {
-        //         return (<Redirect push to="/login"/>);
-        // }
-        return (
-            <div>
-                <h1>Auth</h1>
-            </div>
-        )
-    }
+  render() {
+    return <Login />;
+  }
 }

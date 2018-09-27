@@ -1,42 +1,44 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
-
-import configureStore from './store'
-import registerServiceWorker from './registerServiceWorker'
-
-import App from './shared/App'
-import './index.scss'
-
+import 'babel-polyfill';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import registerServiceWorker from './registerServiceWorker';
+import App from './shared/App';
 import { AppContainer } from 'react-hot-loader';
-
+import { createBrowserHistory } from 'history';
+import configureStore from './store/configure';
+// import api from '../service';
+import sagas from './store/sagas';
+import './index.scss';
 import 'bootstrap/scss/bootstrap.scss';
 
-// Let the reducers handle initial state
-const initialState = {}
-const store = configureStore(initialState)
+const initialState = window.__INITIAL_STATE__;
+const history = createBrowserHistory();
+
+const store = configureStore(initialState);
+
+store.runSaga(sagas);
 
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
-    <Provider store={store}>
-      <BrowserRouter>
-        <Component />
-      </BrowserRouter>
-    </Provider>
-    </AppContainer>
-  , document.getElementById('root')
-  )
-  
-}
+      <Provider store={store}>
+        <BrowserRouter>
+          <Component />
+        </BrowserRouter>
+      </Provider>
+    </AppContainer>,
+    document.getElementById('root'),
+  );
+};
 
-
-
-render(App)
+render(App);
 
 if (module.hot) {
-  module.hot.accept('./shared/App', () => { render(App) })
+  module.hot.accept('./shared/App', () => {
+    render(App);
+  });
 }
 
-registerServiceWorker()
+registerServiceWorker();
