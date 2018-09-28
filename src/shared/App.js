@@ -6,6 +6,8 @@ import Header from './layout/Header';
 import Main from '../pages/main/Main';
 import Auth from '../pages/upload/Auth';
 import Upload from '../pages/upload/Upload';
+import Schedule from '../pages/schedule/Schedule';
+import Reservation from '../pages/reservation/Reservation';
 
 export default class App extends Component {
   constructor() {
@@ -19,6 +21,8 @@ export default class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Main} />
+          <Route path="/schedule" component={Schedule} />
+          <Route path="/reservation" component={Reservation} />
           <Route path="/guest" component={Guest} />
           <Route path="/jaylee" component={Auth} />
           <Route path="/upload" component={Upload} />

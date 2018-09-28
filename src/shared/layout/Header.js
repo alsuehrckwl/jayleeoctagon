@@ -14,7 +14,10 @@ export default class Header extends Component {
           <Link to={`/`} className="navbar-brand">
             <img className="logo" src={LogoImage} />
           </Link>
-          {/* <Link to={`/guest`} className="btn btn-primary">Guest</Link> */}
+          <Link to={`/schedule`}>스케쥴</Link>
+          <Link to={`/reservation`}>예약</Link>
+          <Link to={`/guest`}>게스트</Link>
+          <Link to={`/guest`}>위치</Link>
         </div>
       </nav>
     );
