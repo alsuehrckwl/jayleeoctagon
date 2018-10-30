@@ -66,6 +66,7 @@
     "js-cookie": "^2.2.0",
     "morgan": "^1.8.1",
     "react": "^16.2.0",
+    "react-coverflow": "^0.2.16",
     "react-dom": "^16.2.0",
     "react-firebase-file-uploader": "^2.4.2",
     "react-hot-loader": "^3.0.0",
