@@ -1,11 +1,11 @@
 {
-  "app.css": "static/css/app.d0bd255d.css",
-  "app.css.map": "static/css/app.d0bd255d.css.map",
-  "app.js": "static/js/app.341a5fee.js",
-  "app.js.map": "static/js/app.341a5fee.js.map",
+  "app.css": "static/css/app.c0e3aa69.css",
+  "app.css.map": "static/css/app.c0e3aa69.css.map",
+  "app.js": "static/js/app.077b9676.js",
+  "app.js.map": "static/js/app.077b9676.js.map",
   "static/media/Gangnam-club-octagon.jpg": "static/media/Gangnam-club-octagon.4decf6f6.jpg",
   "static/media/bg-masthead.jpg": "static/media/bg-masthead.20cbd480.jpg",
-  "static/media/logo.jpg": "static/media/logo.4a3c270c.jpg",
-  "vendor.js": "static/js/vendor.bc05b8db.js",
-  "vendor.js.map": "static/js/vendor.bc05b8db.js.map"
+  "static/media/logo-main.png": "static/media/logo-main.cda99cb5.png",
+  "vendor.js": "static/js/vendor.f7ee69eb.js",
+  "vendor.js.map": "static/js/vendor.f7ee69eb.js.map"
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import NoMatch from 'components/NoMatch';
 import Guest from '../pages/guest/Guest';
@@ -17,7 +17,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <Header />
         <Switch>
           <Route exact path="/" component={Main} />
@@ -28,7 +28,7 @@ export default class App extends Component {
           <Route path="/upload" component={Upload} />
           <Route component={NoMatch} />
         </Switch>
-      </div>
+      </Fragment>
     );
   }
 }

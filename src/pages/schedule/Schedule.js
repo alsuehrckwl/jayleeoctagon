@@ -10,11 +10,6 @@ export default class Schedule extends Component {
   }
   render() {
     const { items } = this.state;
-    return (
-      <div>
-        <h1>Schedule</h1>
-        <CarouselComponent items={items} active={0} />
-      </div>
-    );
+    return <CarouselComponent items={items} active={0} />;
   }
 }
