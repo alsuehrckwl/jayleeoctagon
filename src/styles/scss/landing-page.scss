@@ -41,14 +41,18 @@
 }
 
 .arrow-right {
-    left: 780px;
+    // left: 780px;
+}
+
+.carousels {
+    display: flex;
 }
 
 .item {
     text-align: center;
     color: white;
     font-size: 40px;
-    position: absolute;
+    // position: absolute;
     transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
 }
 

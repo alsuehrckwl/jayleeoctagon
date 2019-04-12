@@ -33,6 +33,7 @@ export class CarouselComponent extends Component {
   }
 
   moveLeft() {
+    console.log('left');
     let newActive = this.state.active;
     newActive--;
     this.setState({
@@ -42,11 +43,16 @@ export class CarouselComponent extends Component {
   }
 
   moveRight() {
+    console.log('right');
     let newActive = this.state.active;
     this.setState({
       active: (newActive + 1) % this.state.items.length,
       direction: 'right',
     });
+  }
+
+  test() {
+    console.log('sadlkfjadsklfjadskl;fjasdklfukladsuf');
   }
 
   render() {
@@ -58,12 +64,13 @@ export class CarouselComponent extends Component {
 
     return (
       <div id="carousel" className="noselect">
-        <div className="arrow arrow-left" onClick={this.leftClick}>
+        <button onClick={this.test}>왼</button>
+        <div className="arrow arrow-left" onClick={this.moveLeft}>
           {'<'}
           <i className="fi-arrow-left" />
         </div>
         <TransitionGroup className="carousels">{items}</TransitionGroup>
-        <div className="arrow arrow-right" onClick={this.rightClick}>
+        <div className="arrow arrow-right" onClick={this.moveRight}>
           {'>'}
           <i className="fi-arrow-right" />
         </div>

@@ -62,7 +62,7 @@ export default class Main extends Component {
             <h1>Schedule</h1>
           </div>
 
-          {/* <Schedule /> */}
+          <Schedule />
           <Price />
           <Reservation />
         </div>
