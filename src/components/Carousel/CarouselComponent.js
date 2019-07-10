@@ -18,7 +18,7 @@ export class CarouselComponent extends Component {
     let items = [];
     let level;
     console.log(this.state.active);
-    for (let i = this.state.active - 2; i < this.state.active + 3; i++) {
+    for (let i = this.state.active - 2; i < this.state.active + 1; i++) {
       let index = i;
       if (i < 0) {
         index = this.state.items.length + i;

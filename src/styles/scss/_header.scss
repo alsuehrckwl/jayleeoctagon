@@ -16,8 +16,27 @@
       justify-content: center;
       width: calc(100% - 20px);
   }
+
+  &__menu {
+    height: 100vh;
+    &.open {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      display: flex;
+    }
+
+    &.close {
+      display: none;
+    }
+  }
 }
 
 .logo {
   width: 100px;
 }
+
+

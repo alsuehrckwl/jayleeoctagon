@@ -12,11 +12,8 @@ export default class Main extends Component {
           <div className="container">
             <div className="row">
               <div className="col-xl-9 mx-auto">
-                <h1 className="mb-2 glitch" data-text="WELCOME">
-                  WELCOME
-                </h1>
-                <h1 className="mb-2 glitch" data-text="TO THE">
-                  TO THE
+                <h1 className="mb-2 glitch" data-text="WELCOME TO">
+                  WELCOME TO
                 </h1>
                 <h1 className="mb-2 glitch" data-text="CLUB">
                   CLUB

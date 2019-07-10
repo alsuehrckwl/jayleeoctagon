@@ -1,0 +1,13 @@
+.onav {
+  display: flex;
+  justify-content: space-between;
+  
+  &__prev {
+    display: flex;
+  
+  }
+  
+  &__next {
+    display: flex;
+  }
+}

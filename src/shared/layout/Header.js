@@ -24,6 +24,23 @@ export default class Header extends Component {
     return (
       <nav className="navbar static-top">
         <div className="navbar__hamburger">
+          <div className={`navbar__menu ${hamburger ? 'open' : 'close'}`}>
+            <ul>
+              <li>
+                <a href="#">Schedule</a>
+              </li>
+              <li>
+                <a href="#">Reservation</a>
+              </li>
+              <li>
+                <a href="#">Price</a>
+              </li>
+              <li>
+                <a href="#">Guest</a>
+              </li>
+            </ul>
+          </div>
+
           <div
             className={`wrapper-menu ${hamburger ? 'open' : ''}`}
             onClick={this.toggleHamburgerMenu}
